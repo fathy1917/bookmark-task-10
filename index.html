@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="img/bookmark.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="py-2 title mt-5 text-center my-5">Bookmarker</h1>
+
+        <div class="bookmark-content d-flex align-items-center justify-content-center flex-column p-3 py-4 w-100 gap-4">
+            <h2 class="fw-bold"> 
+            <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites 
+            <i class="fa-solid fa-bookmark"></i>
+            </h2>
+
+            <div class="d-flex flex-column w-100 fw-bold">
+                <label for="bookmark">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name
+                </label>
+                <input type="text" class="form-control mt-1 bookmark" oninput="validateInputs(this)" name="bookmarkName" id="bookmark" placeholder="Bookmark Name">
+            </div>
+            <div class="d-flex flex-column w-100 fw-bold">
+                <label for="bookmarkUrl">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site URL
+                </label>
+                <input type="url" class="form-control mt-1 url" oninput="validateInputs(this)"  name="siteUrl" id="bookmarkUrl" placeholder="Website URL">
+            </div>
+            <button onclick="add()" class="btn btn-warning px-5">Submit</button>
+        </div>
+
+            <div class="container text-center bg-light mt-4">
+                <div class="row py-2 border border-top-0 border-end-0 border-start-0">
+                    <div class="col-3">
+                        <h6 class="fw-bold">Index</h6>
+                    </div>
+                    <div class="col-3">
+                        <h6 class="fw-bold">Website Name</h6>
+                    </div>
+                    <div class="col-3">
+                        <h6 class="fw-bold">Visit</h6>
+                    </div>
+                    <div class="col-3">
+                        <h6 class="fw-bold"> Delete</h6>
+                    </div>
+                </div>
+                <div class="row mt-2 myRow">
+
+                </div>
+            </div>
+    
+    
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
